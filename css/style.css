@@ -1,0 +1,147 @@
+/* remember that style sheets cascade, so whatever is on the bottom will override whats on top. Don't have multiple statements for the same element. Organization and hierarchy are key, start with larger elements and work your way down.
+
+Do they best you can with this, talk with each other and help each other. Most colors and fonts are provided for you. Use adobe color to find the other colors from the sample image.*/
+
+* {
+
+   margin: 0;
+   padding: 0;
+
+}
+
+body {
+   margin: 25px 50px;
+   background-color: lavender;
+
+}
+
+nav a {
+   color: #047F8C;
+   text-transform: uppercase;
+}
+
+.center {
+   margin: 0 auto;
+   width: 200px;
+   display: flex;
+   justify-content: center;
+}
+
+#blue-background {
+   padding: 2em;
+   background-color: lavenderblush;
+
+}
+
+.responsive {
+   width: 100%;
+   height: auto;
+}
+
+h1 {
+   font-family: "Josefin Sans", system-ui;
+   font-size: 37px;
+   letter-spacing: .1em;
+
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: #3A400C;
+
+   text-align: center;
+
+   text-transform: uppercase;
+}
+
+h1 a {
+   color: #3A400C;
+}
+
+
+h2 {
+   color: black;
+   font-family: "Josefin Sans", system-ui;
+   padding-top: 15px;
+   padding-bottom: 10px;
+   padding-left: 25px;
+   padding-right: 30px;
+}
+
+p {
+   font-family: "Lato", system-ui;
+   color: black;
+   padding: 15px;
+}
+
+code {
+   background-color: white;
+   font-family: "Josefin Sans", system-ui;
+   color: #047F8C;
+   padding: 10px;
+}
+
+li {
+
+   color: white;
+   font-family: "Josefin Sans", system-ui;
+   padding: 10px;
+   text-decoration: none
+}
+
+a {
+   font-family: "Josefin Sans", system-ui;
+   padding: 10px;
+   font-size: 18px;
+   text-decoration: none;
+
+}
+
+h3 {
+   font-size: 18px;
+   font-family: "Josefin Sans", system-ui;
+   color: #047F8C;
+}
+
+li {
+   font-size: 10px;
+   text-decoration: none;
+   font-family: "Josefin Sans", system-ui;
+   color: black;
+}
+
+ul a {
+   color: black;
+}
+
+.social-links {
+   text-align: center;
+}
+
+footer {
+   text-align: center;
+}
+
+.container { display: inline-block;}
+
+.text {
+   font-size: 5em;
+   letter-spacing: 10px;;
+   font-family: monospace;
+   border-right: 5px splid;
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   animation:alternate typing 2s steps(15),
+   cursor .4s step-end infinite alternate; 
+}
+
+/* cursor blinking */
+@keyframes cursor {
+   50% { border-color: transparent }
+}
+
+/* typing animation */
+@keyframes typing {
+   from { width: 0}
+}
