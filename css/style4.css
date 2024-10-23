@@ -1,0 +1,88 @@
+* {
+
+   margin: 0;
+   padding: 0;
+
+}
+
+body, html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+@keyframes shrink {
+   0% {
+       font-size: 400px; 
+   }
+   100% {
+       font-size: 25px; 
+   }
+}
+
+/* Apply the animation to the text */
+.shrink-text {
+   font-size: 40px;
+   animation: shrink 2s forwards; /* Animate over 2 seconds */
+   text-decoration: none;
+   color: green   
+}
+
+.striped-background {
+   height: 100vh;
+   background: repeating-linear-gradient(
+       90deg, /* 90 degrees for vertical stripes */
+       #f6fff5, /* First color */
+       #f6fff5 50px, /* Wider first color (50px) */
+       #ffffff 50px, /* Starting point of the second color */
+       #ffffff 100px /* Wider second color (50px) */
+   );
+}
+
+.center {
+   margin: 0 auto;
+   width: 200px;
+   display: flex;
+   justify-content: center;
+}
+
+.cookie-regular {
+   font-family: "Cookie", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+.responsive {
+   width: 100%;
+   height: auto;
+}
+
+h1 {
+   font-family: "cookie", cursive;
+   font-size: 70px;
+   letter-spacing: .1em;
+
+   margin-left: 15px;
+   margin-right: 15px;
+   color: black;
+
+   text-align: center;
+}
+
+p {
+   font-family: "cookie", cursive;
+   font-size: 70px;
+   color: black;
+   padding: 15px;
+}
+
+a {
+   font-family: "cookie", cursive;
+   font-size: 70px;
+   color: black;
+   padding: 15px;
+
+}
+
+.container { display: inline-block;}
+

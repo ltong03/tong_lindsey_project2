@@ -21,12 +21,27 @@ body, html {
    height: 100%;
 }
 
+@keyframes fadeIn {
+   0% {
+       opacity: 0; /* Fully transparent */
+   }
+   100% {
+       opacity: 1; /* Fully visible */
+   }
+}
+
+.fade-in-text {
+   opacity: 0; 
+   animation: fadeIn 9s ease-in forwards; 
+}
+
+
 .striped-background {
    height: 100vh;
    background: repeating-linear-gradient(
        90deg, /* 90 degrees for vertical stripes */
-       #ffe6f8, /* First color */
-       #ffe6f8 50px, /* Wider first color (50px) */
+       #fff5fa, /* First color */
+       #fff5fa 50px, /* Wider first color (50px) */
        #ffffff 50px, /* Starting point of the second color */
        #ffffff 100px /* Wider second color (50px) */
    );
@@ -78,7 +93,7 @@ h2 {
 
 p {
    font-family: "cookie", cursive;
-   font-size: 70px;
+   font-size: 80px;
    color: black;
    padding: 15px;
 }
@@ -177,12 +192,12 @@ footer {
 }
 
 .lyricLeft {
-   animation: slideInLeft 1s ease-in 1 normal none;
+   animation: slideInLeft 3s ease-in 1 normal none;
 }
 
 
 .lyricRight {
-   animation: slideInRight 1.5s ease-in 1 normal none;
+   animation: slideInRight 3s ease-in 1 normal none;
 }
 
 .lyricUp {
